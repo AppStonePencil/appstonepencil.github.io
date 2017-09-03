@@ -1,0 +1,29 @@
+div {
+  overflow: auto;
+}
+#toolbar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 15%;
+  width: 100%;
+}
+#toolbar h1, #toolbar p {
+  color: white;
+}
+#toolbar input {
+  border-style: solid;
+  border-color: white;
+  color: white;
+}
+#content {
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  height: 85%;
+  width: 100%;
+}
+
+#fontSize {
+  width: 50px;
+}
