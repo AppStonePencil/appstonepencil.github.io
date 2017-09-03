@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>AppStone Pencil</title>
+  <style>
+  body {
+    overflow: hidden;
+  }
+  h1, p {
+    overflow: auto;
+    position: absolute;
+  }
+  iframe {
+    border-style: none;
+  }
+  #background, #app {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+  }
+  #title {
+    top: 30%;
+    left: 60%;
+    height: 10%;
+    width: 20%;
+  }
+  .button {
+    background-color: purple;
+    color: white;
+    opacity: 0.5;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+  </style>
+  <script>
+  function loadApp(appSrc) {
+    document.body.innerHTML = "<iframe id='app' src='" + appSrc + "'></iframe>";
+  }
+  </script>
+</head>
+<body>
+  <img src="background.jpg" id="background" />
+  <h1 id="title">AppStone Pencil</h1>
+  <p style="top: 60%; left: 30%; height: 5%; width: 15%;" class="button" onclick="loadApp('app');">Click here to start creating!</p>
+</body>
+</html>
