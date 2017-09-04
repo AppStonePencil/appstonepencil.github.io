@@ -1,7 +1,7 @@
 function page(name) {
   switch (name) {
     case "main":
-    document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><input id="textInput" value="Click here and type" onclick="this.value = ' + "' '" + '" oninput="typeInput();" />&nbsp&nbsp&nbspFont Size: <input id="fontSize"  value="10" />&nbsp&nbsp&nbsp<span onclick="printDocument();">Print</span>&nbsp&nbsp&nbsp<a href="http://emojis.appstone.net" target="_blank">AppStone Emoji:</a>&nbsp<input id="ase1" placeholder="Category ID" />-<input id="ase2" placeholder="Emoji ID" />&nbsp<span onclick="addEmoji();">Add</span></p></div><div id="content"></div>';
+    document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><input id="textInput" value="Click here and type" onclick="this.value = ' + "' '" + '" oninput="typeInput();" />&nbsp&nbsp&nbspFont Size: <input id="fontSize"  value="10" />&nbsp&nbsp&nbsp<span onclick="printDocument();">Print</span>&nbsp&nbsp&nbsp<a href="http://emojis.appstone.net" target="_blank">AppStone Emoji:</a>&nbsp<input id="ase1" style="width: 50px;" />-<input id="ase2" style="width: 50px;" />&nbsp<span onclick="addEmoji();">Add</span></p></div><div id="content"></div>';
     document.getElementById("toolbarOptions").innerHTML = document.getElementById("toolbarOptions").innerHTML + "";
     document.getElementById("content").innerHTML = localStorage.getItem("pencilData");
     break;
