@@ -3,7 +3,7 @@ function page(name) {
     case "main":
     document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><input id="textInput" value="Click here and type" onclick="this.value = ' + "' '" + '" oninput="typeInput();" />&nbsp&nbsp&nbspFont Size: <input id="fontSize"  value="10" />&nbsp&nbsp&nbsp<span onclick="printDocument();">Print</span></p></div><div id="content"></div>';
     document.getElementById("toolbarOptions").innerHTML = document.getElementById("toolbarOptions").innerHTML + "";
-    document.getElementById("content").innerHTML = localStorage.getItem("paperData");
+    document.getElementById("content").innerHTML = localStorage.getItem("pencilData");
     break;
     case "advanced":
     document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><span onclick="page(' + "'main'" + ')">Home</span></p></div><div id="content"></div>';
