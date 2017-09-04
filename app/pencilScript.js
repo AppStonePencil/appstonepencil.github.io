@@ -34,8 +34,15 @@ function addEmoji() {
   var categoryID = document.getElementById("ase1").value;
   var emojiID = document.getElementById("ase2").value;
   document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<img src='http://emojis.appstone.net/icons/" + emojis[categoryID].path + "/" + emojis[categoryID].items[emojiID].path + "' class='appstoneEmoji pencilCharacter' alt='-" + emojis[categoryID].items[emojiID].name + "-' style='height: " + (Math.abs(document.getElementById("fontSize").value) * 2) + "px;' />";
+  autosave();
 }
 
+//Auto-save document
+function autosave() {
+  localStorage.setItem("pencilData", document.getElementById("content").innerHTML);
+}
+
+//When something is typed
 function typeInput() {
   var textInput = document.getElementById("textInput").value;
   if (textInput === "") {
@@ -49,5 +56,5 @@ function typeInput() {
     document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<span class='pencilCharacter' style='font-size: " + (Math.abs(document.getElementById("fontSize").value) * 10) + "%;'>" + textInput.substring(1, textInput.length) + "</span>";
   }
   document.getElementById("textInput").value = " ";
-  localStorage.setItem("pencilData", document.getElementById("content").innerHTML)
+  autosave();
 }
