@@ -1,7 +1,7 @@
 function page(name) {
   switch (name) {
     case "main":
-    document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><input id="textInput" value="Click here and type" onclick="this.value = ' + "' '" + '" oninput="typeInput();" />&nbsp&nbsp&nbspFont Size: <input id="fontSize"  value="10" />&nbsp&nbsp&nbsp<span onclick="printDocument();">Print</span></p></div><div id="content"></div>';
+    document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><input id="textInput" value="Click here and type" onclick="this.value = ' + "' '" + '" oninput="typeInput();" />&nbsp&nbsp&nbspFont Size: <input id="fontSize"  value="10" />&nbsp&nbsp&nbsp<span onclick="printDocument();">Print</span>&nbsp&nbsp&nbsp<a href="http://emojis.appstone.net" target="_blank">AppStone Emoji: </a><input id="ase1" placeholder="Category ID" />-<input id="ase2" placeholder="Emoji ID" />&nbsp<span onclick="addEmoji();">Add</span></p></div><div id="content"></div>';
     document.getElementById("toolbarOptions").innerHTML = document.getElementById("toolbarOptions").innerHTML + "";
     document.getElementById("content").innerHTML = localStorage.getItem("pencilData");
     break;
@@ -27,6 +27,11 @@ function printDocument() {
   document.body.innerHTML = "<p style='text-align: center;'>Created with AppStone Pencil (pencil.appstone.net)</p>" + document.getElementById("content").innerHTML;
   print();
   page("main");
+}
+
+//Add Emoji
+function addEmoji() {
+  
 }
 
 function typeInput() {
