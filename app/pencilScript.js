@@ -31,7 +31,9 @@ function printDocument() {
 
 //Add Emoji
 function addEmoji() {
-  
+  var categoryID = document.getElementById("ase1").value;
+  var emojiID = document.getElementById("ase2").value;
+  document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<img src='http://emojis.appstone.net/icons/" + emojis[categoryID].path + "/" + emojis[categoryID].items[emojiID].path + "' class='appstoneEmoji pencilCharacter' alt='-" + emojis[categoryID].items[emojiID].name + "-' />";
 }
 
 function typeInput() {
