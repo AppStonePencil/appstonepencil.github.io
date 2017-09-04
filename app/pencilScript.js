@@ -40,7 +40,7 @@ function typeInput() {
     }
   } else {
     //New Character
-    document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<span style='font-size: " + (Math.abs(document.getElementById("fontSize").value) * 10) + "%;'>" + textInput.substring(1, textInput.length) + "</span>";
+    document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<span class='pencilCharacter' style='font-size: " + (Math.abs(document.getElementById("fontSize").value) * 10) + "%;'>" + textInput.substring(1, textInput.length) + "</span>";
   }
   document.getElementById("textInput").value = " ";
   localStorage.setItem("paperData", document.getElementById("content").innerHTML)
