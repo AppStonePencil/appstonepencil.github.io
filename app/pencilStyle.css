@@ -8,7 +8,7 @@ div {
   height: 15%;
   width: 100%;
 }
-#toolbar h1, #toolbar p {
+#toolbar h1, #toolbar p, #toolbar a {
   color: white;
 }
 #toolbar input {
