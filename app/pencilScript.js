@@ -20,7 +20,7 @@ function lsDefault(item, value) {
   }
 }
 
-lsDefault("paperData", "<span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span><span> </span><span>t</span><span>o</span><span> </span><span>A</span><span>p</span><span>p</span><span>S</span><span>t</span><span>o</span><span>n</span><span>e</span><span> </span><span>P</span><span>e</span><span>n</span><span>c</span><span>i</span><span>l</span><span>!</span>");
+lsDefault("pencilData", "<span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span><span> </span><span>t</span><span>o</span><span> </span><span>A</span><span>p</span><span>p</span><span>S</span><span>t</span><span>o</span><span>n</span><span>e</span><span> </span><span>P</span><span>e</span><span>n</span><span>c</span><span>i</span><span>l</span><span>!</span>");
 lsDefault("showData", "");
 
 //Print Document
@@ -43,5 +43,5 @@ function typeInput() {
     document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<span class='pencilCharacter' style='font-size: " + (Math.abs(document.getElementById("fontSize").value) * 10) + "%;'>" + textInput.substring(1, textInput.length) + "</span>";
   }
   document.getElementById("textInput").value = " ";
-  localStorage.setItem("paperData", document.getElementById("content").innerHTML)
+  localStorage.setItem("pencilData", document.getElementById("content").innerHTML)
 }
