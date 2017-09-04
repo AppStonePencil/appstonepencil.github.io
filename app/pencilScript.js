@@ -34,9 +34,9 @@ function typeInput() {
   var textInput = document.getElementById("textInput").value;
   if (textInput === "") {
     //Check there are characters to remove
-    if (document.getElementById("content").getElementsByTagName("span").length > 0) {
+    if (document.getElementById("content").getElementsByClassName("pencilCharacter").length > 0) {
       //Backspace
-      document.getElementById("content").getElementsByTagName("span")[document.getElementById("content").getElementsByTagName("span").length - 1].outerHTML = "";
+      document.getElementById("content").getElementsByClassName("pencilCharacter")[document.getElementById("content").getElementsByClassName("pencilCharacter").length - 1].outerHTML = "";
     }
   } else {
     //New Character
