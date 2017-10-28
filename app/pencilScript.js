@@ -4,6 +4,9 @@ function page(name) {
     document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><input id="textInput" value="Click here and type" onclick="this.value = ' + "' '" + '" oninput="typeInput();" />&nbsp&nbsp&nbspFont Size: <input id="fontSize"  value="10" />&nbsp&nbsp&nbsp<span onclick="printDocument();">Print</span>&nbsp&nbsp&nbsp<a href="http://emojis.appstone.net" target="_blank">AppStone Emoji:</a>&nbsp<input id="ase1" style="width: 50px;" />-<input id="ase2" style="width: 50px;" />&nbsp<span onclick="addEmoji();">Add</span>&nbsp&nbsp&nbsp<span onclick="newLine();">New Line</span></p></div><div id="content"></div>';
     document.getElementById("toolbarOptions").innerHTML = document.getElementById("toolbarOptions").innerHTML + "";
     document.getElementById("content").innerHTML = localStorage.getItem("pencilData");
+    document.getElementById("content").onclick = function () {
+      document.getElementById("textInput").focus();
+    }
     break;
     case "advanced":
     document.body.innerHTML = '<div id="toolbar"><p id="toolbarOptions"><span onclick="page(' + "'main'" + ')">Home</span></p></div><div id="content"></div>';
