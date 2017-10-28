@@ -27,3 +27,7 @@ div {
 #fontSize {
   width: 50px;
 }
+
+#textInput {
+  display: none;
+}
