@@ -1,0 +1,23 @@
+body {
+  background: black;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: 'Bungee', cursive;
+}
+
+.linkIcon {
+  position: absolute;
+  width: 20%;
+  height: 60px;
+}
+
+#links {
+  position: relative;
+}
+
+#appName {
+  font-size: 10px;
+}
