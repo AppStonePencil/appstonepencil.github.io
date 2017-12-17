@@ -1,7 +1,5 @@
 window.onunload = function () {
-  if (window.opener) {
-    window.opener.document.getElementById("restartDbrd").style.display = "block";
-  }
+  window.opener.document.getElementById("restartDbrd").style.display = "block";
 };
 
 var settings = JSON.parse(localStorage.getItem("dashboardConfig"));
@@ -19,9 +17,7 @@ function displayAppName(linkNumber) {
 }
 
 function updateStatsField(fieldNumber, value) {
-  if (window.opener) {
-    window.opener.document.getElementById("stats").getElementsByTagName("code")[fieldNumber].innerHTML = value;
-  }
+  window.opener.document.getElementById("stats").getElementsByTagName("code")[fieldNumber].innerHTML = value;
 }
 
 window.setInterval(function () {
@@ -30,11 +26,9 @@ window.setInterval(function () {
 }, 10);
 
 function addHistory(text) {
-  if (window.opener) {
-    var historyContainer = window.opener.document.getElementById("history").getElementsByTagName("div")[0];
-    var currentDate = new Date();
-    historyContainer.innerHTML = "<p>" + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds() + " - " + text + "</p>" + historyContainer.innerHTML;
-  }
+  var historyContainer = window.opener.document.getElementById("history").getElementsByTagName("div")[0];
+  var currentDate = new Date();
+  historyContainer.innerHTML = "<p>" + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds() + " - " + text + "</p>" + historyContainer.innerHTML;
 }
 
 function openLink(linkNumber) {
