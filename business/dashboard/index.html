@@ -3,7 +3,20 @@
   <title>Dashboard</title>
   <script src="startDashboard.js"></script>
   <link href="icon.ico" rel="shortcut icon" />
+  <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+  <link href="logStyle.css" rel="stylesheet">
 </head>
 <body>
+  <button id="restartDbrd" onclick="window.location.reload();">Restart Dashboard</button>
+  <div id="stats">
+    <p class="sectionTitle">Debugger Stats:</p>
+    <p>Dashboard X pos: <code></code></p>
+    <p>Dashboard Y pos: <code></code></p>
+  </div>
+  <br />
+  <div id="history">
+    <p class="sectionTitle">Dashboard History:</p>
+    <div></div>
+  </div>
 </body>
 </html>

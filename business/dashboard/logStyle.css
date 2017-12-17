@@ -1,0 +1,12 @@
+.sectionTitle {
+  font-family: 'Spectral SC', serif;
+}
+
+#restartDbrd {
+  display: none;
+  color: red;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  background: none;
+}
