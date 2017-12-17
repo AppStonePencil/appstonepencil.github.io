@@ -30,9 +30,11 @@ window.setInterval(function () {
 }, 10);
 
 function addHistory(text) {
-  var historyContainer = window.opener.document.getElementById("history").getElementsByTagName("div")[0];
-  var currentDate = new Date();
-  historyContainer.innerHTML = "<p>" + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds() + " - " + text + "</p>" + historyContainer.innerHTML;
+  if (window.opener) {
+    var historyContainer = window.opener.document.getElementById("history").getElementsByTagName("div")[0];
+    var currentDate = new Date();
+    historyContainer.innerHTML = "<p>" + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds() + " - " + text + "</p>" + historyContainer.innerHTML;
+  }
 }
 
 function openLink(linkNumber) {
