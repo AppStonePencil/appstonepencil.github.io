@@ -20,6 +20,9 @@ if (localStorage.getItem("dashboardConfig") != null) {
       dashboard.dashboardWindow.resizeTo(dashboard.width, dashboard.height);
     }
   }, 10);
+  window.onunload = function () {
+    dashboard.dashboardWindow.close();
+  }
 } else {
   document.write("Ask your system administrator to setup Dashboard");
 }
