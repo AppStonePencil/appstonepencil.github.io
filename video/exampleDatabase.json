@@ -2,6 +2,6 @@
   "testvid" : {
     "name" : "Example Video",
     "desc" : "An example video to test Pencil Video",
-    "location" : "testvid.mp4"
+    "location" : "http://pencil.appstone.net/video/testvid.mp4"
   }
 }
