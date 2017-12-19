@@ -1,5 +1,5 @@
 var pencilVideo = {
-  "playerUrl" : "http://localhost/videoplayer",
+  "playerUrl" : "http://pencil.appstone.net/video",
   "getVideoCode" : function (videoId) {
     return pencilVideo.playerUrl + "#" + encodeURIComponent(JSON.stringify({"videoId" : videoId, "videoDatabase" : pencilVideo.databaseUrl}));
   },
