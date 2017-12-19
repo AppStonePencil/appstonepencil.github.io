@@ -1,0 +1,7 @@
+{
+  "testvid" : {
+    "name" : "Example Video",
+    "desc" : "An example video to test Pencil Video",
+    "location" : "http://localhost/testvid.mp4"
+  }
+}

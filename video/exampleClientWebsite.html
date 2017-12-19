@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Example Site</title>
+  <script src="http://localhost/videoplayer/accessContent.js"></script>
+  <script>
+  pencilVideo.databaseUrl = "http://localhost/videoplayer/exampleDatabase.json";
+  window.onload = function () {
+    pencilVideo.loadVideo(["testvid"]);
+  };
+  </script>
+</head>
+<body>
+  <iframe class="pencilVideoContainer"></iframe>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+  background: none;
+}
+
+video {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#playButton {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+#videoInfo {
+  text-align: center;
+}
