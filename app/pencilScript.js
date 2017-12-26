@@ -36,7 +36,7 @@ function printDocument() {
 function addEmoji() {
   var categoryID = document.getElementById("ase1").value;
   var emojiID = document.getElementById("ase2").value;
-  document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<img src='http://emojis.appstone.net/icons/" + emojis[categoryID].path + "/" + emojis[categoryID].items[emojiID].path + "' class='appstoneEmoji pencilCharacter' alt='-" + emojis[categoryID].items[emojiID].name + "-' style='height: " + (Math.abs(document.getElementById("fontSize").value) * 2) + "px;' />";
+  document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "<img src='http://emojis.appstone.net/icons/" + asemojis.emojiData[categoryID].path + "/" + asemojis.emojiData[categoryID].items[emojiID].path + "' class='appstoneEmoji pencilCharacter' alt='-" + asemojis.emojiData[categoryID].items[emojiID].name + "-' style='height: " + (Math.abs(document.getElementById("fontSize").value) * 2) + "px;' />";
   autosave();
 }
 
