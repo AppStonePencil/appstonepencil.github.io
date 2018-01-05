@@ -10,7 +10,7 @@ var videoData = getJSON(urlValues.videoDatabase);
 
 window.onload = function () {
 	if (videoData[urlValues.videoId] != undefined) {
-		document.getElementsByTagName("video")[1].src = videoData[urlValues.videoId].location;
+		document.getElementsByTagName("video")[0].src = videoData[urlValues.videoId].location;
     		document.getElementById("videoInfo").getElementsByTagName("p")[0].innerHTML = videoData[urlValues.videoId].name;
     		document.getElementById("videoInfo").getElementsByTagName("p")[1].innerHTML = videoData[urlValues.videoId].desc;
     		document.getElementById("playButton").parentElement.onmouseover = function () {
